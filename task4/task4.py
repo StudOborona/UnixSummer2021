@@ -12,10 +12,9 @@ import urllib.request
 
 
 def main():
-
     # Если аргумент в виде URL не был принят - вводим его
     if len(sys.argv) != 2:
-        url_input = input("Введите какой-либо URL ->")
+        url_input = input("Введите какой-либо URL -> ")
     else:
         url_input = sys.argv[1]
 
