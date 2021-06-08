@@ -6,7 +6,7 @@
 """
 import threading
 
-#Начальная переменная для pi
+# Начальная переменная для pi
 pi = 0
 
 
@@ -29,7 +29,7 @@ def main():
     # Начало последнего запущенного потока
     start_num = 1
 
-    #Цикл по кол-ву потоков
+    # Цикл по кол-ву потоков
     for i in range(count):
         t = threading.Thread(target=worker, args=(start_num, start_num + section_length,))
         t.start()

@@ -4,8 +4,8 @@
 --
 Существует несколько вариантов решения, это один из них
 """
-import time
 import threading
+import time
 
 pi = 1.0
 
