@@ -2,12 +2,13 @@
 Напишите простой многопоточный загрузчик URL. Список URL скрипт принимает как аргументы командной строки.
 """
 import sys
+import threading
 
 import requests
-import threading
 
 # Словарь с ассоциацией между url и данными
 responses_dict = {}
+
 
 def loader(url: str):
     """Метод для загрузки ответов по URL"""
@@ -15,6 +16,7 @@ def loader(url: str):
     r = requests.get(url)
     # Добавляем данные в словарь
     responses_dict[url] = r.text
+
 
 def main():
     if sys.argv == 1:
