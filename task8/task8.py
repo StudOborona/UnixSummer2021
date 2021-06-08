@@ -4,6 +4,7 @@
 Реализовать рекурсивный обход поддиректорий.
 """
 import os
+import sys
 
 
 class Trip:
@@ -39,7 +40,17 @@ class Trip:
 
 
 def main():
-    trip = Trip("check", 555)
+    if len(sys.argv) != 3:
+
+        file_path_input = input("Введите путь -> ")
+        file_size_input = int(input("Введите размер файла для поиска (в байтах) ->"))
+    else:
+        file_path_input = sys.argv[1]
+        file_size_input = sys.argv[2]
+
+    # file_path_input = "check"
+    # file_size_input = 555
+    trip = Trip(file_path_input, file_size_input)
 
 
 if __name__ == "__main__":
