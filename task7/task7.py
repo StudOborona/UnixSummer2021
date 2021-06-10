@@ -35,7 +35,7 @@ def worker(thread_num):
                     break
 
             if is_simple_flag:
-                print(f'[Поток {thread_num}] Число {current_number} простое!')
+                print(f"[Поток {thread_num}] Число {current_number} простое!")
 
 
 def adder():

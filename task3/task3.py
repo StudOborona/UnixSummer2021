@@ -20,7 +20,9 @@ def loader(url: str):
 
 def main():
     if sys.argv == 1:
-        print("Необходимо передать URL в аргументах при запуске скрипта (например, python3 task.py https://ya.ru")
+        print(
+            "Необходимо передать URL в аргументах при запуске скрипта (например, python3 task.py https://ya.ru"
+        )
         return
 
     # Получаем список URL

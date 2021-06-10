@@ -31,7 +31,13 @@ def main():
 
     # Цикл по кол-ву потоков
     for i in range(count):
-        t = threading.Thread(target=worker, args=(start_num, start_num + section_length,))
+        t = threading.Thread(
+            target=worker,
+            args=(
+                start_num,
+                start_num + section_length,
+            ),
+        )
         t.start()
         start_num += section_length
 

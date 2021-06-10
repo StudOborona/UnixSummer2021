@@ -29,7 +29,10 @@ class Trip:
             current_item_path = os.path.abspath(f"{current_dir}{os.sep}{item}")
 
             # Если это файл и размер совпадает, то выводим его
-            if os.path.isfile(current_item_path) and os.path.getsize(current_item_path) == self.bytes_size:
+            if (
+                os.path.isfile(current_item_path)
+                and os.path.getsize(current_item_path) == self.bytes_size
+            ):
                 print(f"[ФАЙЛ] {current_item_path}")
 
             # Если директория

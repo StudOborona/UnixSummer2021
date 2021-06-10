@@ -24,7 +24,13 @@ def pi_counter(count: int, start_time: time):
     # Интервалы
     inter = 100000 // count
     for i in range(2 + inter, 100000 + 1, inter):
-        t = threading.Thread(target=pi_val, args=(i, inter,)).start()
+        t = threading.Thread(
+            target=pi_val,
+            args=(
+                i,
+                inter,
+            ),
+        ).start()
 
     pi = pow((pi * 12), 0.5)
     time_diff = time.time() - start_time

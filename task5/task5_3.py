@@ -12,7 +12,7 @@ pi = 1
 
 def counter(n):
     global pi
-    pi += (1 / (n ** 2))
+    pi += 1 / (n ** 2)
 
 
 def main():
