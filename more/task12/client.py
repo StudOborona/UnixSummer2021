@@ -1,3 +1,10 @@
+"""
+Модифицированный клиент/сервер (https://github.com/StudOborona/UnixSummer2021/tree/main/task2)
+Когда сервер отсылает клиенту "Continue", то клиент повторяет запрос.
+Если отсылает "Cancel", то клиент закрывает соединение
+
+Тут реализация клиента
+"""
 # coding=utf-8
 import socket
 
